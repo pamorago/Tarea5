@@ -1,0 +1,95 @@
+/* styles.css - Estilos básicos para la tarea */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+  background: #f9f9f9;
+}
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 0.5rem 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+section {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+h2 {
+  color: #34495e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+}
+div {
+  margin-bottom: 1rem;
+}
+code,
+pre {
+  background: #f4f4f4;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 1em;
+}
+.ejemplo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ejemplo-codigo,
+.ejemplo-resultado {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ejemplo-codigo {
+  background: #f4f4f4;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.95em;
+  overflow-x: auto;
+  word-break: break-all;
+  flex: 1 1 0;
+}
+.ejemplo-resultado {
+  background: #eafaf1;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1em;
+  min-height: 2.5em;
+  word-break: break-word;
+  flex: 1 1 0;
+  overflow-x: auto;
+}
+@media (max-width: 700px) {
+  .ejemplo-grid {
+    grid-template-columns: 1fr;
+  }
+  .ejemplo-codigo,
+  .ejemplo-resultado {
+    align-items: flex-start;
+  }
+}
