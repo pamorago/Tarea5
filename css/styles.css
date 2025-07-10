@@ -84,6 +84,15 @@ pre {
   flex: 1 1 0;
   overflow-x: auto;
 }
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #888;
+  font-size: 0.95em;
+}
+footer hr {
+  margin: 2rem 0 1rem 0;
+}
 @media (max-width: 700px) {
   .ejemplo-grid {
     grid-template-columns: 1fr;
